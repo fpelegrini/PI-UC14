@@ -102,7 +102,7 @@ public class ClienteController {
 	@RequestMapping("/editar-cliente")
 	public ModelAndView editarCliente(long id) {
 		Cliente cliente = cr.findById(id);
-		ModelAndView mv = new ModelAndView("funcionario/update-cliente");
+		ModelAndView mv = new ModelAndView("cliente/update-cliente");
 		mv.addObject("cliente", cliente);
 		return mv;
 	}
